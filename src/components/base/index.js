@@ -30,7 +30,8 @@ function BaseToast({
   return (
     <TouchableOpacity
       testID='rootView'
-      style={[styles.base, styles.borderLeft, style]}
+      //style={[styles.base, styles.borderLeft, style]}
+      style={[styles.base, style]}
       onPress={onPress}
       activeOpacity={onPress ? activeOpacity : 1}>
       {leadingIcon && (
@@ -45,6 +46,11 @@ function BaseToast({
           />
         </TouchableOpacity>
       )}
+
+      <Icon
+        style={{ position: 'absolute', bottom: 0, left: 0, width: 40, height: 40 }}
+        source={icons.pattern}
+      />
 
       <View
         testID='contentContainer'

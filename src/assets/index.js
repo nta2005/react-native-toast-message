@@ -5,7 +5,8 @@ const assets = {
     success: require('./icons/success.png'),
     error: require('./icons/error.png'),
     info: require('./icons/info.png'),
-    close: require('./icons/close.png')
+    close: require('./icons/close.png'),
+    pattern: require('./icons/pattern.png'),
   }
 };
 
